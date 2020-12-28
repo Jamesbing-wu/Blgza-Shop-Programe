@@ -1,0 +1,53 @@
+[
+
+	{
+		id: 1,
+		name: "手机",
+		card: [
+			{
+				cid: 1,
+				cname: "高端手机",
+				item: [{
+						iid: 1
+						iimg: "https://asdasd"
+						iiname: "锤子"
+					},
+					{
+						iid: 2
+						iimg: "https://asdasdss"
+						iiname: "诺基亚"
+					},
+					{
+						iid: 3
+						iimg: "https://asdasdss"
+						iiname: "华强北"
+					}
+				]
+			},
+			{
+				cid: 2,
+				cname: "老年手机",
+				item: [
+					{
+						iid: 1
+						iimg: "https://asdasd"
+						iiname: "老子"
+					},
+					{
+						iid: 2
+						iimg: "https://asdasdss"
+						iiname: "老亚"
+					},
+					{
+						iid: 3
+						iimg: "https://asdasdss"
+						iiname: "老北"
+					}
+				]
+			}
+		}
+
+		]
+	}
+
+]

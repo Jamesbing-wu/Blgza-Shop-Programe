@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.container {
+  padding-bottom: 98rpx;
+}
+.tui-box {
+  padding: 20rpx 0 118rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tui-address {
+  min-height: 80rpx;
+  padding: 10rpx 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.tui-userinfo {
+  font-size: 30rpx;
+  font-weight: 500;
+  line-height: 30rpx;
+  padding-bottom: 12rpx;
+}
+.tui-name {
+  padding-right: 40rpx;
+}
+.tui-addr {
+  font-size: 24rpx;
+  word-break: break-all;
+  padding-right: 25rpx;
+}
+.tui-addr-tag {
+  padding: 5rpx 8rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  background: #EB0909;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 25rpx;
+  line-height: 25rpx;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 0 center;
+          transform-origin: 0 center;
+  -webkit-border-radius: 6rpx;
+          border-radius: 6rpx;
+}
+.tui-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 8rpx;
+  left: 0;
+  bottom: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAAECAMAAADszM6/AAAAOVBMVEUAAAAVqfH/fp//vWH/vWEVqfH/fp8VqfH/fp//vWEVqfH/fp8VqfH/fp//vWH/vWEVqfH/fp//vWHpE7b6AAAAEHRSTlMA6urqqlVVFRUVq6upqVZUDT4vVAAAAEZJREFUKM/t0CcOACAQRFF6r3v/w6IQJGwyDsPT882IQzQE0E3chToByjG5LwMgLZN3TQATmdypCciBya0cgOT3/h//9PgF49kd+6lTSIIAAAAASUVORK5CYII=") repeat;
+}
+.tui-top {
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.tui-goods-title {
+  font-size: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-weight: 700;
+}
+.tui-padding {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tui-goods-item {
+  width: 100%;
+  padding: 20rpx 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.tui-goods-img {
+  width: 180rpx;
+  height: 180rpx;
+  display: block;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.tui-goods-center {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 20rpx 8rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tui-goods-name {
+  max-width: 310rpx;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 26rpx;
+  line-height: 32rpx;
+}
+.tui-goods-attr {
+  font-size: 22rpx;
+  color: #888888;
+  line-height: 32rpx;
+  padding-top: 20rpx;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.tui-price-right {
+  text-align: right;
+  font-size: 24rpx;
+  color: #888888;
+  line-height: 30rpx;
+  padding-top: 20rpx;
+}
+.tui-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  font-size: 26rpx;
+}
+.tui-total-flex {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.tui-color-red,
+.tui-invoice-text {
+  color: #E41F19;
+  padding-right: 30rpx;
+}
+.tui-balance {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.tui-black {
+  color: #222;
+  line-height: 30rpx;
+}
+.tui-gray {
+  color: #888888;
+  font-weight: 400;
+}
+.tui-light-dark {
+  color: #666;
+}
+.tui-goods-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 20rpx;
+}
+.tui-size-26 {
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.tui-price-large {
+  font-size: 34rpx;
+  line-height: 32rpx;
+  font-weight: 600;
+}
+.tui-flex-end {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  padding-right: 0;
+}
+.tui-phcolor {
+  color: #B3B3B3;
+  font-size: 26rpx;
+}
+.tui-remark-box {
+  padding: 22rpx 30rpx;
+}
+.tui-remark {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 26rpx;
+  padding-left: 64rpx;
+}
+.tui-scale-small {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 100% center;
+          transform-origin: 100% center;
+}
+.tui-scale-small .wx-switch-input {
+  margin: 0 !important;
+}
+.tui-tabbar {
+  width: 100%;
+  height: 98rpx;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  font-size: 26rpx;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 996;
+}
+.tui-pr-30 {
+  padding-right: 30rpx;
+}
+.tui-pr-20 {
+  padding-right: 20rpx;
+}
+.tui-none-addr {
+  height: 80rpx;
+  padding-left: 5rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.tui-addr-img {
+  width: 36rpx;
+  height: 46rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.tui-pr25 {
+  padding-right: 25rpx;
+}
+.tui-safe-area {
+  height: 1rpx;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+/* payModel */
+.tui-pay-item__title {
+  width: 100%;
+  height: 90rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 28rpx;
+}
+.tui-pay-amuont {
+  color: #eb0909;
+  font-weight: 500;
+  font-size: 34rpx;
+}
+.tui-pay-item {
+  width: 100%;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 28rpx;
+}
+.tui-pay-logo {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 15rpx;
+}
+.tui-radio {
+  margin-left: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 100% center;
+          transform-origin: 100% center;
+}
+.tui-btn-pay {
+  width: 100%;
+  padding: 68rpx 35rpx 50rpx 35rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tui-recharge {
+  color: #fc872d;
+  margin-left: auto;
+  padding: 12rpx 0;
+}
+

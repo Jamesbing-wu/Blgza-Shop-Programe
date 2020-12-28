@@ -1,0 +1,36 @@
+
+.goods-bag{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.goods_image{
+	width: 300rpx;
+	height: 300rpx;
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	background:#f3f3f3;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
+	border-style: groove;
+}
+.title{
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	font-size: 40rpx;
+	text-align: center;
+}
+.logo{
+	margin-bottom: -40rpx;
+}
+
+

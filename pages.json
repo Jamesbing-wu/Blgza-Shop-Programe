@@ -1,0 +1,757 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+
+
+		{
+			"path": "pages/mall/mall/mall",
+			"style": {
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"backgroundColorTop": "#F7F7F7",
+				"backgroundColorBottom": "#F7F7F7",
+				"navigationBarTitleText": "Labraff 商城",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		// {
+		// 	"path": "pages/test/test",
+		// 	"style": {
+		// 		"navigationBarBackgroundColor": "#fff", 
+		// 		"navigationBarTextStyle": "black",
+		// 		"backgroundColorTop": "#F7F7F7",
+		// 		"backgroundColorBottom": "#F7F7F7",
+		// 		"navigationBarTitleText": "Labraff 商城",
+		// 		"enablePullDownRefresh": true,
+		// 		"onReachBottomDistance": 50
+		// 	}
+		// },
+		{
+			"path": "pages/mall/productList/productList",
+			"style": {
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"backgroundColorTop": "#F7F7F7",
+				"backgroundColorBottom": "#F7F7F7",
+				"navigationBarTitleText": "商品列表 ",
+				"onReachBottomDistance": 50,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/productDetail/productDetail",
+			"style": {
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"backgroundColorTop": "#F7F7F7",
+				"backgroundColorBottom": "#F7F7F7",
+				"navigationBarTitleText": "商品详情 ",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/address/address",
+			"style": {
+				"navigationBarTitleText": "地址",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/coupon/coupon",
+			"style": {
+				"navigationBarTitleText": "领券中心",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"backgroundColorTop": "#F5F5F5",
+				"backgroundColorBottom": "#F5F5F5",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/editAddress/editAddress",
+			"style": {
+				"navigationBarTitleText": "地址管理",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/myOrder/myOrder",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/orderDetail/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/shopcart/shopcart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					// #ifdef APP-PLUS
+					"titleNView": {
+						"padding-right": "15px",
+						"buttons": [{
+							"text": "编辑",
+							"float": "right",
+							"width": "auto",
+							"fontSize": "15px",
+							"color": "#333"
+						}]
+					},
+					// #endif
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/set/set",
+			"style": {
+				"navigationBarTitleText": "账户设置",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/submitOrder/submitOrder",
+			"style": {
+				"navigationBarTitleText": "提交订单",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/userInfo/userInfo",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/timeaxis/timeaxis",
+			"style": {
+				"navigationBarTitleText": "查看物流",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/classify/classify",
+			"style": {
+				"navigationBarTitleText": "商品分类",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"backgroundColorTop": "#fcfcfc",
+				"backgroundColorBottom": "#fcfcfc",
+				"mp-weixin": {
+					"disableScroll": true
+				},
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"mp-baidu": {
+					"disableScroll": true
+				}
+			}
+		},
+		{
+			"path": "pages/mall/notice/notice",
+			"style": {
+				"navigationBarTitleText": "消息提醒设置",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/nickname/nickname",
+			"style": {
+				"navigationBarTitleText": "修改昵称",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索商品",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+
+		{
+			"path": "pages/mall/myCoupon/myCoupon",
+			"style": {
+				"navigationBarTitleText": "我的优惠券",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/mall/message/message",
+			"style": {
+				"navigationBarTitleText": "消息中心",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "开始你的新生活~",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/mall/myCollections/myCollections",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mall/myHistory/myHistory",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mall/paySuccess/paySuccess",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"enablePullDownRefresh": false
+			}
+		}
+	    ,{
+            "path" : "pages/mall/activityPage/activityPage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/payment/pay/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path":"pages/mall/goods/yuanchuang/hat",
+			"style":{
+				"navigationBarTitleText":"帽子"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/bag",
+			"style":{
+				"navigationBarTitleText":"包"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/pin",
+			"style":{
+				"navigationBarTitleText":"发卡"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/shirt",
+			"style":{
+				"navigationBarTitleText":"衬衫"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/waistcoat",
+			"style":{
+				"navigationBarTitleText":"马甲"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/scarf",
+			"style":{
+				"navigationBarTitleText":"围巾"
+				}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/outcoat",
+			"style":{
+				"navigationBarTitleText":"外套"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/Tie",
+			"style":{
+				"navigationBarTitleText":"领带"
+			}
+		},
+		{
+			"path":"pages/mall/goods/yuanchuang/dress",
+			"style":{
+				"navigationBarTitleText":"裙子"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/bag",
+			"style":{
+				"navigationBarTitleText":"书包"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/couple",
+			"style":{
+				"navigationBarTitleText":"情侣服"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/dress",
+			"style":{
+				"navigationBarTitleText":"裙子"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/long",
+			"style":{
+				"navigationBarTitleText":"长袖"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/phone",
+			"style":{
+				"navigationBarTitleText":"手机壳"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/shirt",
+			"style":{
+				"navigationBarTitleText":"衬衫"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/shoes",
+			"style":{
+				"navigationBarTitleText":"鞋子"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/short",
+			"style":{
+				"navigationBarTitleText":"短袖"
+			}
+		},
+		{
+			"path":"pages/mall/goods/wenchuang/sweater",
+			"style":{
+				"navigationBarTitleText":"卫衣"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/10INSANIYAT/goods",
+			"style":{
+				"navigationBarTitleText":"INSANIYAT"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/1JIYALIREN/goods",
+			"style":{
+				"navigationBarTitleText":"JIYALIREN"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/2MAHLIYA/goods",
+			"style":{
+				"navigationBarTitleText":"MAHLIYA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/3MRAS/goods",
+			"style":{
+				"navigationBarTitleText":"MRAS"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/6PAHRIM/goods",
+			"style":{
+				"navigationBarTitleText":"PAHRIM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/12PAVZIYA/goods",
+			"style":{
+				"navigationBarTitleText":"PAVZIYA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/5cc_b/goods",
+			"style":{
+				"navigationBarTitleText":"CC-b"
+			}
+		},
+		
+		{
+			"path":"pages/mall/goods/brands/4WUYO/goods",
+			"style":{
+				"navigationBarTitleText":"WUYO"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/7MAPTUN/goods",
+			"style":{
+				"navigationBarTitleText":"MAPTUN"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/8AWRIXIM/goods",
+			"style":{
+				"navigationBarTitleText":"AWRIXIM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/9HANIX/goods",
+			"style":{
+				"navigationBarTitleText":"HANIX"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/11GILBER/goods",
+			"style":{
+				"navigationBarTitleText":"GILBER"
+			}	
+			
+		},
+		{
+			"path":"pages/mall/goods/brands/13GULBERNA/goods",
+			"style":{
+				"navigationBarTitleText":"GULBERNA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/14EZIZ/goods",
+			"style":{
+				"navigationBarTitleText":"EZIZ"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/15OZHAN/goods",
+			"style":{
+				"navigationBarTitleText":"OZHAN"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/16YIKELIN/goods",
+			"style":{
+				"navigationBarTitleText":"依科林"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/17JIASALKIN/goods",
+			"style":{
+				"navigationBarTitleText":"JIASALKIN"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/18YARIXIM/goods",
+			"style":{
+				"navigationBarTitleText":"YARIXIM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/19KELBIKE/goods",
+			"style":{
+				"navigationBarTitleText":"KELBIKE"
+			}
+		},
+		
+		{
+			"path":"pages/mall/goods/brands/20BUSARA/goods",
+			"style":{
+				"navigationBarTitleText":"BUSARA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/21NIHARA/goods",
+			"style":{
+				"navigationBarTitleText":"NIHARA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/22KARAM/goods",
+			"style":{
+				"navigationBarTitleText":"KARAM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/23Yonghui/goods",
+			"style":{
+				"navigationBarTitleText":"永辉"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/24GULIGENA/goods",
+			"style":{
+				"navigationBarTitleText":"GULIGENA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/25TUUYGU/goods",
+			"style":{
+				"navigationBarTitleText":"TUUTGU"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/26BH-BLACK/goods",
+			"style":{
+				"navigationBarTitleText":"BH-BLACK"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/27ZENNAZ/goods",
+			"style":{
+				"navigationBarTitleText":"ZENNAZ"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/28MUJASSAM/goods",
+			"style":{
+				"navigationBarTitleText":"MUJESSEM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/29GOHARZIMIN/goods",
+			"style":{
+				"navigationBarTitleText":"GOHAR ZIMIN"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/30GULNAZ/goods",
+			"style":{
+				"navigationBarTitleText":"GULNAZ"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/31ISHANQIM/goods",
+			"style":{
+				"navigationBarTitleText":"ISHANQIM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/32KOXNUR/goods",
+			"style":{
+				"navigationBarTitleText":"KOXNUR"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/33AJDATLAR/goods",
+			"style":{
+				"navigationBarTitleText":"AJDATLAR"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/34UZDEYARIM/goods",
+			"style":{
+				"navigationBarTitleText":"UZ DEYARIM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/35RAHAT/goods",
+			"style":{
+				"navigationBarTitleText":"RAHAT"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/36UYSIMA/goods",
+			"style":{
+				"navigationBarTitleText":"UYSIMA"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/37TOYUM/goods",
+			"style":{
+				"navigationBarTitleText":"TOYUM"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/38QINAR/goods",
+			"style":{
+				"navigationBarTitleText":"QINAR"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/39JIYAHAN/goods",
+			"style":{
+				"navigationBarTitleText":"JIYAHAN"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/40Dijle/goods",
+			"style":{
+				"navigationBarTitleText":"Dijle"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/41NEZZME/goods",
+			"style":{
+				"navigationBarTitleText":"NEZZME"
+			}
+		},
+		{
+			"path":"pages/mall/goods/brands/42SEVDE/goods",
+			"style":{
+				"navigationBarTitleText":"SEVDE"
+			}
+		},
+		{
+			"path":"pages/login/loginButton",
+			"style":{
+				"navigationBarTitleText":"登录"
+			}
+		}
+		
+    ],
+
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+
+	"easycom": {
+
+		"tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue",
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+
+	},
+
+	"tabBar": {
+		"borderStyle": "white",
+		"color": "#717171",
+		"selectedColor": "#e41f19",
+		"fontSize": "15px",
+		"iconWidth": "20px",
+		"height": "700px",
+		"list": [{
+			"pagePath": "pages/mall/mall/mall",
+			"text": "首页",
+			"iconPath": "static/icons/home-40.png",
+			"selectedIconPath": "static/icons/home-selected-40.png"
+		}, {
+			"pagePath": "pages/mall/classify/classify",
+			"text": "分类",
+			"iconPath": "static/icons/classify-40.png",
+			"selectedIconPath": "static/icons/classify-selected-40.png"
+
+		}, {
+			"pagePath": "pages/mall/shopcart/shopcart",
+			"text": "购物车",
+			"iconPath": "static/icons/shopcart-40.png",
+			"selectedIconPath": "static/icons/shopcart-select-40.png"
+		}, {
+			"pagePath": "pages/mall/my/my",
+			"text": "我的",
+			"iconPath": "static/icons/my-40.png",
+			"selectedIconPath": "static/icons/my-selected-40.png"
+		}]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+
+}

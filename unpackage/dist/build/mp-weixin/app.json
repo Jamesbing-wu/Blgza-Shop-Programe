@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/mall/mall/mall",
+    "pages/mall/productList/productList",
+    "pages/mall/productDetail/productDetail",
+    "pages/mall/address/address",
+    "pages/mall/coupon/coupon",
+    "pages/mall/editAddress/editAddress",
+    "pages/mall/my/my",
+    "pages/mall/myOrder/myOrder",
+    "pages/mall/orderDetail/orderDetail",
+    "pages/mall/shopcart/shopcart",
+    "pages/mall/set/set",
+    "pages/mall/submitOrder/submitOrder",
+    "pages/mall/userInfo/userInfo",
+    "pages/mall/classify/classify",
+    "pages/mall/notice/notice",
+    "pages/mall/nickname/nickname",
+    "pages/mall/search/search",
+    "pages/mall/myCoupon/myCoupon",
+    "pages/mall/message/message",
+    "pages/login/login",
+    "pages/mall/myCollections/myCollections",
+    "pages/mall/myHistory/myHistory",
+    "pages/mall/paySuccess/paySuccess",
+    "pages/mall/activityPage/activityPage"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#717171",
+    "selectedColor": "#e41f19",
+    "fontSize": "15px",
+    "iconWidth": "20px",
+    "height": "700px",
+    "list": [
+      {
+        "pagePath": "pages/mall/mall/mall",
+        "text": "首页",
+        "iconPath": "static/icons/home-40.png",
+        "selectedIconPath": "static/icons/home-selected-40.png"
+      },
+      {
+        "pagePath": "pages/mall/classify/classify",
+        "text": "分类",
+        "iconPath": "static/icons/classify-40.png",
+        "selectedIconPath": "static/icons/classify-selected-40.png"
+      },
+      {
+        "pagePath": "pages/mall/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "static/icons/shopcart-40.png",
+        "selectedIconPath": "static/icons/shopcart-select-40.png"
+      },
+      {
+        "pagePath": "pages/mall/my/my",
+        "text": "我的",
+        "iconPath": "static/icons/my-40.png",
+        "selectedIconPath": "static/icons/my-selected-40.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

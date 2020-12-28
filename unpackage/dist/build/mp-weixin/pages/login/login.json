@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "开始你的新生活~",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-bottom-popup": "/components/thorui/tui-bottom-popup/tui-bottom-popup"
+  }
+}

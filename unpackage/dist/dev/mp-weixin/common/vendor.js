@@ -22741,16 +22741,20 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 // const baseUrl = "http://shop.sidcloud.cn:30080/api";
 var apis = (_apis = {
   // shop
-  bannerTop: baseUrl + "/shop/bannerTop", //首页banner
-  recommendCatalog: baseUrl + "/shop/recommendCatalog", //首页分类
-  goodList: baseUrl + "/shop/goodList", //首页推荐商品
-  bannerCatalog: baseUrl + '/shop/bannerCatalog', //分类页banner
-  hotWord: baseUrl + '/shop/hotWord', //热搜关键字
-  hotNewShop: baseUrl + '/shop/hotNewShop', //新品推荐
-  catalogFind: baseUrl + '/shop/catalogFind?cid=0', //子类页面的分类获取
-  goodFind: baseUrl + '/shop/goodFind', //商品搜索结果
-  noGoodDetails: baseUrl + '/shop/goodDetails', //无token商品详情页
-  swiperBanner: baseUrl + '/get_banner',
+
+  // recommendCatalog:baseUrl+"/shop/recommendCatalog",	//首页分类
+  // goodList:baseUrl+"/shop/goodList",	//首页推荐商品
+  // bannerCatalog:baseUrl+'/shop/bannerCatalog',	//分类页banner
+  // hotWord:baseUrl+'/shop/hotWord', 	//热搜关键字
+  // hotNewShop:baseUrl+'/shop/hotNewShop',	//新品推荐
+  // catalogFind:baseUrl+'/shop/catalogFind?cid=0',	//子类页面的分类获取
+  // goodFind:baseUrl+'/shop/goodFind',	//商品搜索结果
+  // noGoodDetails :baseUrl+'/shop/goodDetails', //无token商品详情页
+  swiperBanner: baseUrl + '/get_banner.php', //首页头部轮播图片
+  exhImage: baseUrl + '/get_exh.php', //首页原创产品和文创产品
+  brandLoso: baseUrl + '/get_brand.php', //首页品牌产品logo
+
+
   // auth
   unCheckReg: baseUrl + "/auth/unCheckReg",
   unCheckLogin: baseUrl + "/auth/unCheckLogin",
@@ -22775,7 +22779,7 @@ baseUrl + '/consumer/newOrder'), _defineProperty(_apis, "wechatInfo",
 
 
 baseUrl + "/wechat/info"), _defineProperty(_apis, "wechatLogin",
-baseUrl + "/wechat/login"), _apis);var _default =
+baseUrl + "/login.php"), _apis);var _default =
 
 
 apis;exports.default = _default;

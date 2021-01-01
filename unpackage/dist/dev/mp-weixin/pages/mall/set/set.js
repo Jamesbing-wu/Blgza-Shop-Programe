@@ -207,7 +207,7 @@ var _default =
           url = "../notice/notice";
           break;
         case 4:
-          url = "/pages/common/about/about";
+          url = "../set/aboutUs";
           break;
         case 5:
           url = "/pages/my/feedback/feedback?page=mall";

@@ -168,7 +168,7 @@ var _default =
                 getApp().globalData.userInfo = res.userInfo;
                 console.log(res.userInfo);
                 uni.request({
-                  url: 'https://www.blgza.com/formal/login.php',
+                  url: getApp().apis().wechatLogin,
                   method: 'POST',
                   header: {
                     'content-type': 'application/x-www-form-urlencoded' },
@@ -187,10 +187,10 @@ var _default =
                     getApp().globalData.sessionKey = res.data.session_key;
                     getApp().globalData.signin = res.data.signin;
                     getApp().globalData.phone = res.data.pho_num;
-                    console.log(res.data.pho_num);
                     uni.setStorageSync('opid', res.data.openid);
-                    console.log(res.data.session_key);
-                    console.log(res.data.openid);
+                    getApp().globalData.userInfo.haslogin = true;
+                    console.log(getApp().globalData);
+
 
                   },
                   complete: function complete(res) {

@@ -26,17 +26,17 @@
 			<!-- 头像 -->
 			<view class="tui-header-center">
 				<image src="/static/images/my/mine_def_touxiang_3x.png" class="tui-avatar" @tap="login" v-if="!userinfo.haslogin"></image>
-				<image :src="userinfo.head" class="tui-avatar" @tap="href(3)" v-else></image>
+				<image :src="userinfo.avatarUrl" class="tui-avatar" @tap="href(3)" v-else></image>
 
 				<view class="tui-info" v-if="!userinfo.haslogin" @tap="login">
 					<view class="tui-nickname">未登录
-						<image src="/static/images/mall/my/icon_vip_3x.png" class="tui-img-vip"></image>
+						<!-- <image src="/static/images/mall/my/icon_vip_3x.png" class="tui-img-vip"></image> -->
 					</view>
 					<view class="tui-explain">Welcome ~</view>
 				</view>
 
 				<view class="tui-info" v-else>
-					<view class="tui-nickname">{{userinfo.nickname}}
+					<view class="tui-nickname">{{userinfo.nickName}}
 						<image src="/static/images/mall/my/icon_vip_3x.png" class="tui-img-vip"></image>
 					</view>
 					<view class="tui-explain">Welcome ~</view>
@@ -105,13 +105,13 @@
 						</view>
 						<view class="tui-order-text">已送达</view>
 					</view> -->
-					<view class="tui-order-item" @tap="href(4,3)">
+					<!-- <view class="tui-order-item" @tap="href(4,3)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_pingjia_3x.png" class="tui-order-icon"></image>
 							<view class="tui-badge tui-badge-red" v-if="lengthData.commit>0">{{lengthData.commit}}</view>
 						</view>
 						<view class="tui-order-text">评价</view>
-					</view>
+					</view> -->
 					<view class="tui-order-item" @tap="href(4,5)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_tuikuan_3x.png" class="tui-order-icon"></image>
@@ -123,11 +123,11 @@
 			</view>
 			<!-- 我的资产卡片 -->
 			<view class="tui-box tui-assets-box" v-if="userinfo.role.length>1">
-				<tui-list-cell padding="0" unlined :hover="false">
+				<!-- <tui-list-cell padding="0" unlined :hover="false">
 					<view class="tui-cell-header">
 						<view class="tui-cell-title">我的资产</view>
 					</view>
-				</tui-list-cell>
+				</tui-list-cell> -->
 				<view class="tui-order-list tui-assets-list">
 					<view class="tui-order-item" @tap="href(8)">
 						<view class="tui-assets-num">
@@ -165,63 +165,63 @@
 			</view>
 
 			<!-- 常用工具卡片 -->
-			<view class="tui-box tui-tool-box" v-if="userinfo.role.length>1">
+			<view class="tui-box tui-tool-box">  <!--  v-if="userinfo.role.length>1"  -->
 				<tui-list-cell :arrow="true" padding="0" :lineLeft="false">
 					<view class="tui-cell-header">
 						<view class="tui-cell-title">常用工具</view>
-						<view class="tui-cell-sub">查看更多</view>
+						<!-- <view class="tui-cell-sub">查看更多</view> -->
 					</view>
 				</tui-list-cell>
 				<view class="tui-order-list tui-flex-wrap">
-					<view class="tui-tool-item">
+					<view class="tui-tool-item" @tap="href(12)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_gift_3x.png" class="tui-tool-icon"></image>
 							<image src="/static/images/mall/my/icon_tab_3x.png" class="tui-badge-icon"></image>
 						</view>
 						<view class="tui-tool-text">免费领好礼</view>
 					</view>
-					<view class="tui-tool-item">
+					<view class="tui-tool-item" @tap="href(11)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_purse_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">钱包</view>
 					</view>
-					<view class="tui-tool-item" @tap="href(6)">
+					<!-- <view class="tui-tool-item" @tap="href(6)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_ticket_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">领券中心</view>
-					</view>
-					<view class="tui-tool-item">
+					</view> -->
+					<view class="tui-tool-item" @tap="href(10)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_kefu_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">客服服务</view>
 					</view>
-					<view class="tui-tool-item">
+					<!-- <view class="tui-tool-item">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_fanxian_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">每日返现</view>
-					</view>
-					<view class="tui-tool-item">
+					</view> -->
+					<view class="tui-tool-item" @tap="href(13)">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_tuan_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">超值拼团</view>
 					</view>
-					<view class="tui-tool-item">
+					<!-- <view class="tui-tool-item">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_zhihuan_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">闲置换钱</view>
-					</view>
-					<view class="tui-tool-item">
+					</view> -->
+					<!-- <view class="tui-tool-item">
 						<view class="tui-icon-box">
 							<image src="/static/images/mall/my/icon_kaipiao_3x.png" class="tui-tool-icon"></image>
 						</view>
 						<view class="tui-tool-text">开发票</view>
-					</view>
+					</view> -->
 				</view>
 			</view>
 
@@ -280,7 +280,7 @@
 			this.showGood()
 
 
-			this.userinfo = app.globalData;
+			this.userinfo = app.globalData.userInfo;
 
 			let obj = {};
 			// #ifdef MP-WEIXIN
@@ -302,13 +302,14 @@
 			})
 		},
 		onShow() {
-			this.userinfo = app.globalData;
+			this.userinfo = app.globalData.userInfo;
+			console.log('onshow',this.userinfo)
 			this.hooks()
 			this.initialData()
 		},
 		data() {
 			return {
-				userinfo: null,
+				userinfo:app.globalData.userInfo,
 				webURL: "https://www.thorui.cn/wx",  //获取图片地址
 				top: 0, //标题图标距离顶部距离
 				opacity: 0,
@@ -431,6 +432,9 @@
 					case 9:
 						url = "../myHistory/myHistory"
 						break;
+					case 10:
+						url = "../userInfo/kefu"
+						break;
 					default:
 						break;
 				}
@@ -439,12 +443,14 @@
 						url: url
 					})
 				} else {
-					this.tui.toast("功能尚未完善~")
+					uni.showModal({
+						content:"正在开发中，敬请期待！"
+					})
 				}
 			},
 			login() {
 				uni.navigateTo({
-					url: '../../login/login'
+					url: '../../login/loginButton'
 				})
 			},
 			detail: function(gid) {

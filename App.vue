@@ -5,11 +5,11 @@
 	export default {
 
 		onLaunch: function() {
-			this.autoLogin()
-			this.getMainData()
+			// this.autoLogin()
+			// this.getMainData()
 		},
 		onShow: function() {
-			this.getMainData()
+			// this.getMainData()
 		},
 		onHide: function() {
 
@@ -155,13 +155,13 @@
 
 
 			getMainData() {
-				let bannerTop = {
-					url: this.apis().bannerTop,
-					method: 'GET',
-				}
-				this.httpRequest(bannerTop).then(res => {
-					uni.setStorageSync('bannerTop', JSON.parse(res.data).data)
-				})
+				// let bannerTop = {
+				// 	url: this.apis().bannerTop,
+				// 	method: 'GET',
+				// }
+				// this.httpRequest(bannerTop).then(res => {
+				// 	uni.setStorageSync('bannerTop', JSON.parse(res.data).data)
+				// })
 
 				let recommendCatalog = {
 					url: this.apis().recommendCatalog,
@@ -224,7 +224,8 @@
 			openid:null,
 			phone:null,
 			sessionKey:null,
-			signin:0
+			signin:0,
+			haslogin:false
 		}
 	}
 </script>

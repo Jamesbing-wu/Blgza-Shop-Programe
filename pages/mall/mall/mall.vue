@@ -119,7 +119,8 @@
 		onReady:function(){
 			
 			uni.request({
-				url:'https://www.blgza.com/formal/get_exh.php',
+				// url:'https://www.blgza.com/formal/get_exh.php',
+				url: getApp().apis().exhImage,
 				method:'POST',
 				dataType:'json',
 				header:{
@@ -134,7 +135,8 @@
 				}
 			})
 			uni.request({
-				url:'https://www.blgza.com/formal/get_exh.php',
+				// url:'https://www.blgza.com/formal/get_exh.php',
+				url: getApp().apis().exhImage,
 				method:'POST',
 				dataType:'json',
 				header:{
@@ -149,8 +151,7 @@
 				}
 			})
 			uni.request({
-				url:'https://www.blgza.com/formal/get_banner.php',
-				// url:app.apis().swiperBanner,
+				url:getApp().apis().swiperBanner,
 				method:'POST',
 				dataType:'json',
 				header:{
@@ -158,9 +159,12 @@
 				},
 				success: (res) => {
 					console.log(res.data.data);
+					console.log(getApp().apis().swiperBanner)
 					this.swiperItemUrls=res.data.data;
 				}
 			})
+			
+			
 			uni.request({
 				url:'https://www.blgza.com/formal/get_brand.php',
 				method:'GET',

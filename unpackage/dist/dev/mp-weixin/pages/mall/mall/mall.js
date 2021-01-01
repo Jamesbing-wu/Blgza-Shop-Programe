@@ -258,7 +258,8 @@ __webpack_require__.r(__webpack_exports__);
   onReady: function onReady() {var _this = this;
 
     uni.request({
-      url: 'https://www.blgza.com/formal/get_exh.php',
+      // url:'https://www.blgza.com/formal/get_exh.php',
+      url: getApp().apis().exhImage,
       method: 'POST',
       dataType: 'json',
       header: {
@@ -273,7 +274,8 @@ __webpack_require__.r(__webpack_exports__);
       } });
 
     uni.request({
-      url: 'https://www.blgza.com/formal/get_exh.php',
+      // url:'https://www.blgza.com/formal/get_exh.php',
+      url: getApp().apis().exhImage,
       method: 'POST',
       dataType: 'json',
       header: {
@@ -288,8 +290,7 @@ __webpack_require__.r(__webpack_exports__);
       } });
 
     uni.request({
-      url: 'https://www.blgza.com/formal/get_banner.php',
-      // url:app.apis().swiperBanner,
+      url: getApp().apis().swiperBanner,
       method: 'POST',
       dataType: 'json',
       header: {
@@ -297,8 +298,11 @@ __webpack_require__.r(__webpack_exports__);
 
       success: function success(res) {
         console.log(res.data.data);
+        console.log(getApp().apis().swiperBanner);
         _this.swiperItemUrls = res.data.data;
       } });
+
+
 
     uni.request({
       url: 'https://www.blgza.com/formal/get_brand.php',

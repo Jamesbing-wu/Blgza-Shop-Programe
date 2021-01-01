@@ -428,7 +428,7 @@ var app = getApp();var _default =
     this.showGood();
 
 
-    this.userinfo = app.globalData;
+    this.userinfo = app.globalData.userInfo;
 
     var obj = {};
 
@@ -450,13 +450,14 @@ var app = getApp();var _default =
 
   },
   onShow: function onShow() {
-    this.userinfo = app.globalData;
+    this.userinfo = app.globalData.userInfo;
+    console.log('onshow', this.userinfo);
     this.hooks();
     this.initialData();
   },
   data: function data() {
     return {
-      userinfo: null,
+      userinfo: app.globalData.userInfo,
       webURL: "https://www.thorui.cn/wx", //获取图片地址
       top: 0, //标题图标距离顶部距离
       opacity: 0,
@@ -579,6 +580,9 @@ var app = getApp();var _default =
         case 9:
           url = "../myHistory/myHistory";
           break;
+        case 10:
+          url = "../userInfo/kefu";
+          break;
         default:
           break;}
 
@@ -587,12 +591,14 @@ var app = getApp();var _default =
           url: url });
 
       } else {
-        this.tui.toast("功能尚未完善~");
+        uni.showModal({
+          content: "正在开发中，敬请期待！" });
+
       }
     },
     login: function login() {
       uni.navigateTo({
-        url: '../../login/login' });
+        url: '../../login/loginButton' });
 
     },
     detail: function detail(gid) {

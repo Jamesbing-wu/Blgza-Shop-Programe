@@ -86,7 +86,9 @@
     "pages/mall/goods/brands/40Dijle/goods",
     "pages/mall/goods/brands/41NEZZME/goods",
     "pages/mall/goods/brands/42SEVDE/goods",
-    "pages/login/loginButton"
+    "pages/login/loginButton",
+    "pages/mall/userInfo/kefu",
+    "pages/mall/set/aboutUs"
   ],
   "subPackages": [],
   "window": {

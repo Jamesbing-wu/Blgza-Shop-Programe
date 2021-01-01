@@ -107,11 +107,11 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ./utils/api.js */ 9));
 {
 
   onLaunch: function onLaunch() {
-    this.autoLogin();
-    this.getMainData();
+    // this.autoLogin()
+    // this.getMainData()
   },
   onShow: function onShow() {
-    this.getMainData();
+    // this.getMainData()
   },
   onHide: function onHide() {
 
@@ -257,13 +257,13 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ./utils/api.js */ 9));
 
 
     getMainData: function getMainData() {
-      var bannerTop = {
-        url: this.apis().bannerTop,
-        method: 'GET' };
-
-      this.httpRequest(bannerTop).then(function (res) {
-        uni.setStorageSync('bannerTop', JSON.parse(res.data).data);
-      });
+      // let bannerTop = {
+      // 	url: this.apis().bannerTop,
+      // 	method: 'GET',
+      // }
+      // this.httpRequest(bannerTop).then(res => {
+      // 	uni.setStorageSync('bannerTop', JSON.parse(res.data).data)
+      // })
 
       var recommendCatalog = {
         url: this.apis().recommendCatalog,
@@ -326,7 +326,8 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ./utils/api.js */ 9));
     openid: null,
     phone: null,
     sessionKey: null,
-    signin: 0 } };exports.default = _default;
+    signin: 0,
+    haslogin: false } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
